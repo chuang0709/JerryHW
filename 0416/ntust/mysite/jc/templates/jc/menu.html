@@ -1,0 +1,16 @@
+{% for u in user %}
+
+<table class="table">
+<tr>
+	<th>Name</th>
+	<th>Birthday</th>
+	<th>Gender</th>
+</tr>
+<tr>
+	<td>{{ u.name }}</td>
+	<td>{{u.birthday}}</td>
+	<td>{% if u.is_boy %} 男 {% else %} 女{% endif %}</td>
+
+</tr>
+{% endfor %}
+
